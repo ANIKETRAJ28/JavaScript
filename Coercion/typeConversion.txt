@@ -1,0 +1,23 @@
+Every language has got some mechanism for type interconversion.
+Eg. In Java we can do Systum.out.println("Hello"+22)
+-- the above statement prints Hello22 i.e it converted 22 to string -> "22" and concatinated them as Hello22
+
+Types of interconversion
+-> Implicit -- when language automatically converts type
+-> Explicit -- when we manually command to convert type
+
+Similarly in JS this concept exists.
+For JS things are a bit tricky as JS handles wide variety of cases.
+
+Abstract Operations -- These are operations/ functions which are not available for end users to use.
+But JS internally uses it & these are mentioned in the official docs to actually aid the documentation
+https://262.ecma-international.org/10.0/#sec-abstract-operations -- docs link
+
+Abstract Types
+-> ToString
+-> ToNumber
+-> ToBoolean
+-> ToPrimitive
+etc.
+
+We directly cannot call them but some operations like '-' subtraction, '+' addition etc internally calls them and hence we can mimic them using these operations
