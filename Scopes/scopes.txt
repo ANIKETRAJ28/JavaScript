@@ -1,0 +1,8 @@
+What do we mean by Scpes?
+-> In simple words, scope is simply where to look for things.
+In terms of programming, we are looking for variables and functions
+
+We have more or less 3 types of scopes
+-- Global
+-- functions
+-- Block
