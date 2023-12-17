@@ -18,7 +18,7 @@
     
     Let rnum be ? ToNumber(rval).
     
-Return the result of applying the subtraction operation to lnum and rnum.
+    Return the result of applying the subtraction operation to lnum and rnum.
  */
 
 /**

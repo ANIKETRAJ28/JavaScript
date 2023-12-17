@@ -14,10 +14,10 @@ But JS internally uses it & these are mentioned in the official docs to actually
 https://262.ecma-international.org/10.0/#sec-abstract-operations -- docs link
 
 Abstract Types
--> ToString
--> ToNumber
--> ToBoolean
 -> ToPrimitive
+-> ToNumber
+-> ToString
+-> ToBoolean
 etc.
 
 We directly cannot call them but some operations like '-' subtraction, '+' addition etc internally calls them and hence we can mimic them using these operations
