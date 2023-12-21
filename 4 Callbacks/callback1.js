@@ -29,7 +29,7 @@ function fun(x, fn) {
   for (let i = 0; i < x; i++) {
     console.log(i);
   }
-  f();
+  fn();
 }
 
 fun(10, f);
