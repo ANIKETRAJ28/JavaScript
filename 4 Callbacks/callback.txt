@@ -1,0 +1,14 @@
+Callback--
+These two functions are not by default given to the us by JS.
+Then how are we able to use it?
+SetTimeout and SetInterval are some examples.
+
+SetTimeout----
+It is a function that helps to exeute some tasks once after a certain timer.
+
+SetInterval----
+It is a function that helps us to execute some task again and again after a given interval.
+
+Callback----
+A callback is a function that is passed to another function.
+f(g(x)) where, g(x) is a callabck function

@@ -1,0 +1,36 @@
+How JS handles Async operations?
+--> JS is a single threaded language.
+--> JS by default only supports synchronous code execution.
+
+The above properties of sync code execution only works for operations natively known to JS.
+The asynchronous operations are hadled by the runtime.
+
+But how does JS handles them? We can easilt do tasks that take a lot of time to complete without blocking the flow of code. How?
+--> When the asynchronous operation comes while execution of code, it is skipped by the JS and is done by the runtime.
+foe eg.  we have this code
+
+function process() {
+  console.log("start");
+  setTimeout(function exec() {
+    console.log("executed task");
+  }, 3000);
+  console.log("end");
+}
+
+process();
+
+Here, process() will be called and start will be printed, then in the asynchronous function setTimeout(), the runtime will be execution the block of code.
+the runtime can handle multiple asynchronous operations. A timer of 3sec will start and meanwhile the JS will continue the further execution.
+After 3sec the asynchronous operation performed will be sent to the event queue(queue which handles the asynchronous operations).
+
+The condition to start executing task form event queue
+-> The callstack should be empty, i.e no function in the callstack is left to be executed.
+-> The global code is also done.
+eg.
+process();
+console.log("TATA");
+console.log("TATA"); is a global code.
+
+The event loop which is a kind of infinite loop which checks everytime is the condition true/ false.
+The condition is if the callstack is empty and all the global code is done or not.
+If the condition is true, then the event queue will start poping the operations performed and will be executed
