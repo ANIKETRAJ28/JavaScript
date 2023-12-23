@@ -7,7 +7,7 @@ The asynchronous operations are hadled by the runtime.
 
 But how does JS handles them? We can easilt do tasks that take a lot of time to complete without blocking the flow of code. How?
 --> When the asynchronous operation comes while execution of code, it is skipped by the JS and is done by the runtime.
-foe eg.  we have this code
+for eg.  we have this code
 
 function process() {
   console.log("start");
@@ -19,8 +19,8 @@ function process() {
 
 process();
 
-Here, process() will be called and start will be printed, then in the asynchronous function setTimeout(), the runtime will be execution the block of code.
-the runtime can handle multiple asynchronous operations. A timer of 3sec will start and meanwhile the JS will continue the further execution.
+Here, process() will be called and start will be printed, then in the asynchronous function setTimeout(), the runtime will be executing the block of code.
+The runtime can handle multiple asynchronous operations. A timer of 3sec will start and meanwhile the JS will continue the further execution.
 After 3sec the asynchronous operation performed will be sent to the event queue(queue which handles the asynchronous operations).
 
 The condition to start executing task form event queue

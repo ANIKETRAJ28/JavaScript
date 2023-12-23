@@ -10,7 +10,7 @@ function fetchCustom(url, fn) {
   // download content of the url
   // this downlaoding can take some time
   // we will download the content from url, and then whatever is the result, we will pass to the callback
-  console.log("starting downlaod ", url);
+  console.log("starting download ", url);
   setTimeout(function process() {
     let response = "dummy data";
     fn(response);
@@ -52,3 +52,16 @@ fetchCustom("www.google.com", function fun(response) {
     });
   });
 });
+
+/**
+ * This is the callback hell due to which the code readibility becomes difficult and it's problemetic to debug the code.
+ * To overcome this we use Promises.
+ */
+
+/**
+ * Explaination->
+ * Downloading is a timetaking process and to visualize it we use setTimeout() function.
+ * Now, we want to show the download status of the data. But if we use setTimeout() and we print after the downloading status, then the message would be reflected and download would have hot happened.
+ * To overcome this and for further tasks to upload and write the data we use callbacks in the setTimeout().
+ * This will resolve our problem, the further more codes will be executed after the timer.
+ */

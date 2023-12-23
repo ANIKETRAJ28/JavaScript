@@ -1,0 +1,11 @@
+Promise -->
+Promise was introduced to conqueror the disadvantage of callbacks.
+
+Disadvantages of callback -->
+Callback hell
+Inversion of control -> If there is some part of code and whose control we are passing to someone else, and we don't know how that part will be executed. This problem is called inversion of control.
+
+Promise
+Promise is a special JS object that are considered enhancers. They get immediately returned from a function setup to return a promise.
+They act as a placeholder for the data we hope to get back frok some function task.
+We also attach the functionality we want to defer umtil the future task is done. And promise automatically handles execution of this function.
