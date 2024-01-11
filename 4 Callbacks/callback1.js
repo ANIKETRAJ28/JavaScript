@@ -20,7 +20,7 @@ fun(20, function () {
   console.log("anonymous logger");
 });
 
-// passing nother function
+// passing aother function
 function f() {
   console.log("logger");
 }

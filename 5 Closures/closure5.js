@@ -1,12 +1,12 @@
-function test() {
-  for (var i = 0; i < 3; i++) {
-    setTimeout(function excel() {
-      console.log(`i: ${i}`);
-    }, i * 1000);
-  }
-}
+// function test() {
+//   for (var i = 0; i < 3; i++) {
+//     setTimeout(function excel() {
+//       console.log(`i: ${i}`);
+//     }, i * 1000);
+//   }
+// }
 
-test();
+// test();
 
 // function test() {
 //   for (var i = 0; i < 3; i++) {
@@ -19,12 +19,12 @@ test();
 
 // test();
 
-// function test() {
-//   for (let i = 0; i < 3; i++) {
-//     setTimeout(function excel() {
-//       console.log(`i: ${i}`);
-//     }, i * 1000);
-//   }
-// }
+function test() {
+  for (let i = 0; i < 3; i++) {
+    setTimeout(function excel() {
+      console.log(`i: ${i}`);
+    }, i * 1000);
+  }
+}
 
-// test();
+test();
